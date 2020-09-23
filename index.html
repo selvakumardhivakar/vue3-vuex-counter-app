@@ -8,17 +8,20 @@
     <title>Hello!</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://unpkg.com/vue@next" defer></script>
     <script
       src="https://unpkg.com/vuex@4.0.0-beta.4/dist/vuex.global.js"
       defer
     ></script>
-    <script src="/script.js" defer></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div id="container">
-      <p>
+      <h1>
+        Vue-Vuex-Counter application
+      </h1>
+      <p class="counter"> 
          Counter: {{ count }}
       </p>
      <button @click="increment">

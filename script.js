@@ -17,7 +17,7 @@ const v1 = {
 const store = Vuex.createStore({
   state() {
     return {
-      count: 1
+      count: 0
     };
   },
   mutations: {

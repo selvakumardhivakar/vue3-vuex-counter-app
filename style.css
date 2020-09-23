@@ -1,4 +1,22 @@
-.container{
+body {
+  width: 100%;
+}
+#container {
   margin: 0 auto;
-  width: 80%
+  width: 80%;
+  text-align: center;
+  background-color: lightblue;
+}
+.counter {
+  color: red;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+button {
+  outline: none;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 2rem;
+  background-color: lightgreen;
 }
