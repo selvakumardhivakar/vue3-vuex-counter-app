@@ -17,12 +17,15 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <div id="counter">
+    <div id="container">
       <p>
-         Counter: {{ counter }}
+         Counter: {{ count }}
       </p>
      <button @click="increment">
        +
+      </button>
+      <button @click="decrement">
+       -
       </button>
     </div>
   </body>

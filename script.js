@@ -1,13 +1,15 @@
-const Counter = {
-  data() {
-    return {
-      counter: this.$store.state.count
-    };
+const v1 = {
+  computed: {
+    count() {
+      return store.state.count;
+    }
   },
   methods: {
     increment() {
       this.$store.commit("increment");
-      console.log(this.$store.state.count);
+    },
+    decrement(){
+      this.$store.commit("decrement");
     }
   }
 };
@@ -21,10 +23,15 @@ const store = Vuex.createStore({
   mutations: {
     increment(state) {
       state.count++;
+    },
+    decrement(state){
+      if(state.count > 0){
+         state.count--;
+      }
     }
   }
 });
 
-var app = Vue.createApp(Counter);
+var app = Vue.createApp(v1);
 app.use(store);
-app.mount("#counter");
+app.mount("#container");
